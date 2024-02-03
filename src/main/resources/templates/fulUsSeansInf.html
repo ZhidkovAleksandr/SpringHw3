@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Informations complètes de la session</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            margin: 10px 0;
+            color: #666;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        /* Стили для полей данных */
+        span[data-field] {
+            color: #007BFF; /* Цвет текста для данных */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <p><strong>ID:</strong> <span th:text="${usInfTot.curSeans}" data-field="curSeans">" "</span></p>
+    <p><strong> Prenom:</strong> <span th:text="${usInfTot.prenom}" data-field="prenom">" "</span></p>
+    <p><strong> Nom:</strong> <span th:text="${usInfTot.nom}" data-field="nom">" "</span></p>
+    <p><strong> Dernière date:</strong> <span th:text="${usInfTot.curDt}" data-field="curDt">" "</span></p>
+
+</body>
+</html>
